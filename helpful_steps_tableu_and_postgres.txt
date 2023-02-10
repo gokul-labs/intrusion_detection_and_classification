@@ -1,0 +1,28 @@
+Setting up Tableu:
+
+1. Simply download tableu for mac and sign in with any id for a 14 day trial.
+2. If you want you can login using your student account and get a trial for a longer duration.
+3. Once your tableu starts working you can start by loading an excel file to see how the data loading, refreshing and all looks and then you can connect it with a db later.
+4. There are a lot of things you can do in tableu. I highly recommend going through their documentation if you are planning to use filters and all.
+5. To summarize the working -  Once your data is loaded, you can drag/drop columns and measures from the left onto sheets, combine sheets to form dashboards and if you want, combine dashboards into stories.
+
+Setting up postgresql:
+
+1. Postgresql is free relational db available for all platforms
+2. brew install postgresql 
+3. This should install postgresql in your system. However, you may face a port issue (since it by default runs on 5432)
+4. For me, i just stopped the service and restarted again and it worked...
+5. brew services stop postgresql
+6. brew services restart postgresql
+7. Simply use by typing: psql postgres on your terminal
+8. You may want to create roles and set up username and password tho its not mandatory. I setup a username and password for myself which I used in tableu to postgres integration
+
+Integration:
+1. Integration of postgresql to tableu is pretty strightforward
+2. You can add a new data source "postgresql". In server put "localhost" port- 5432, database-"postgres" and username and password
+3. If you face error in postgres connection to Tableau, copy the jar to ~/Library/Tableau/Drivers (create folder if needed)
+jar file -> postgresql-42.2.22.jar or postgresql-42.3.1.jar (based on version). The jar can be found in tableau_driver/ folder in the project
+4. Restart Tableau, postgres server if needed.
+
+Hope this helps
+

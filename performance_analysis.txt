@@ -1,0 +1,9 @@
+read_write_data, read_data_csv, Load dataframe from the input file, 2.022549 
+process_data, drop_selected_data, Drop data to reduce data skew, 1.612916 
+process_data, map_attack_categories, Find the attack category from attack type, 0.095926 
+process_data, process_attack_column, Perform all attack relatedETL operations, 15.598624 
+process_data, remove_duplicate_records_remove_duplicates, Remove duplicates using drop duplicate method, 0.035989 
+process_data, load_and_initial_process_input_dataset, Perform initialETL processing steps, 15.691589 
+run_training, training_model_full_data, Create model from full training data, 943.532716 
+run_training, augment_and_process_data, Augment and process data for training, 16.140918 
+run_training, save_model, Run the training on full data and save the generated model, 927.391798 

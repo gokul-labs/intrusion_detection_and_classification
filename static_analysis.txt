@@ -1,0 +1,9 @@
+read_write_data, read_dataset_s3, Read the full uncompressed data from S3,25.890606
+read_write_data, read_dataset_s3_compressed, Read the compressed dataset S3,2.603271
+process_data, remove_duplicate_records_drop_duplicates, Remove duplicates using drop duplicates,  88.368952
+process_data, remove_duplicate_records_distinct, Remove duplicates using distinct, 75.016011
+process_data, get_attack_counts, Materialize the df to get count of attacks by type, 60.536790
+process_data, get_attack_counts_pandas, Materialize the df to get count of attacks by type by pandas, 14.454663
+process_data, clean_data_distinct, Remove columns with single value using distinct, 190.254666
+process_data, clean_data_without_distinct, Remove columns with single value without distinct, 120.254666
+

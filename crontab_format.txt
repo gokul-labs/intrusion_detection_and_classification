@@ -1,0 +1,7 @@
+Please put this in your crontab -e
+
+0 2 * * 1 spark-submit run_training.py 
+
+
+Make sure to have your path and environment variables set.
+
